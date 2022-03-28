@@ -1,0 +1,10 @@
+"use strict";
+exports.__esModule = true;
+var Product_1 = require("./Product");
+var ProductService_1 = require("./ProductService");
+var _ = new ProductService_1.ProductService();
+console.log(_.getproducts());
+_.addproduct(new Product_1.Product(5, "Samsung S20", 10000));
+console.log(_.getproducts());
+_.removeproduct(3);
+console.log(_.getproducts());
